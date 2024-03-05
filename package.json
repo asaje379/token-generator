@@ -1,0 +1,19 @@
+{
+  "name": "@asaje/token-generator",
+  "version": "0.0.2",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "typings": "dist/main.d.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.16.0",
+    "esbuild": "^0.17.18",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build": "tsc && esbuild src/main.ts --bundle --minify --platform=node --packages=external --outfile=dist/main.js"
+  },
+  "files": [
+    "dist"
+  ]
+}
